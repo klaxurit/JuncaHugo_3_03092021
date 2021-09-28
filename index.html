@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <title>Festival des films plein air</title>
 </head>
@@ -15,7 +16,7 @@
     <!-- NAVBAR -->
     <header class="container-fluid">
         <nav class="navbar navbar-expand-lg fixed-top navbar-light p-2">
-            <a class="navbar-brand"><img src="./images/logo-festi.png" alt="Logo du festival" class="logo-festi "></a>
+            <a class="navbar-brand"><img src="./images/logo-festi.png" alt="Logo du festival" class="logo-festi"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -48,7 +49,7 @@
     <!-- HERO -->
     <div class="row m-0">
     <!-- FIRST info HEADER  -->
-        <div class="col-12 info-festival text-center ">
+        <div class="col-12 info-festival text-center text-move">
             <p><strong>Date du festival : du lundi 8 août au lundi 15 août</strong></p>
         </div>
     </div>
@@ -70,7 +71,7 @@
 
     <!-- SECOND info HEADER  -->
     <div class="row m-0">
-        <div class="col-12 info-date text-center">
+        <div class="col-12 info-date text-center text-move">
             <p><strong>Lundi 8 août à 18h : fast and furius 18</strong></p>
         </div>
     </div>
@@ -89,7 +90,7 @@
     </div>
 
     <!-- SEPARATOR -->
-    <div class="row justify-content-center mt-4">
+    <div class="row justify-content-center m-0 mt-4">
         <div class="col-8">
             <hr>
         </div>
@@ -105,6 +106,7 @@
     <div class="row justify-content-center m-0">
         <h4 class="text-center mt-3 movie-title">" BORDER "</h4>
         <p class="small text-center">Mardi 9 août - 19h30</p>
+        <div class="text-center"><button class="btn btn-primary btn-sm">Réservez <i class="fas fa-ticket-alt"></i></button></div>
         <div class="col-10 mt-4"><img src="./images/affiche-1.jpg" alt="Une affiche de film" class="affiche img-thumbnail float-start"></div>
     </div>
     <!-- MOVIE SYNOPSIS  -->
@@ -118,7 +120,7 @@
     </div>
     <!-- MOVIE CASTING  -->
     <div class="row justify-content-center m-0 mt-4">
-        <div class="col-10">
+        <div class="col-7">
             <h5 class="my-title">Casting</h5>
             <ul class="list-unstyled">
                 <li><strong>Acteurs</strong>:<br> José MARTIN, René LATAUPE</li>
@@ -126,12 +128,23 @@
                 <li><strong>Réalisateur</strong>:<br> Fred ZIPO</li>
             </ul>
         </div>
+        <div class="col-3 d-flex align-items-end justify-content-center mb-4 mr-2">
+            <div class=""><button class="btn btn-primary btn-sm">En savoir plus...</button></div>
+        </div>
+    </div>
+
+    <!-- SEPARATOR -->
+    <div class="row justify-content-center m-0 mt-4">
+        <div class="col-8">
+            <hr>
+        </div>
     </div>
 
     <!-- MOVIE DESCRIPTION  -->
     <div class="row justify-content-center m-0">
         <h4 class="text-center mt-3 movie-title">" 90'S "</h4>
         <p class="small text-center">Mardi 9 août - 19h30</p>
+        <div class="text-center"><button class="btn btn-primary btn-sm">Réservez <i class="fas fa-ticket-alt"></i></button></div>
         <div class="col-10 mt-4"><img src="./images/affiche-2.jpg" alt="Une affiche de film" class="affiche img-thumbnail float-start"></div>
     </div>
     <!-- MOVIE SYNOPSIS  -->
@@ -145,7 +158,7 @@
     </div>
     <!-- MOVIE CASTING  -->
     <div class="row justify-content-center m-0 mt-4">
-        <div class="col-10">
+        <div class="col-7">
             <h5 class="my-title">Casting</h5>
             <ul class="list-unstyled">
                 <li><strong>Acteurs</strong>:<br> José MARTIN, René LATAUPE</li>
@@ -153,12 +166,23 @@
                 <li><strong>Réalisateur</strong>:<br> Fred ZIPO</li>
             </ul>
         </div>
+        <div class="col-3 d-flex align-items-end justify-content-center mb-4 mr-2">
+            <div class=""><button class="btn btn-primary btn-sm">En savoir plus...</button></div>
+        </div>
+    </div>
+
+    <!-- SEPARATOR -->
+    <div class="row justify-content-center m-0 mt-4">
+        <div class="col-8">
+            <hr>
+        </div>
     </div>
 
     <!-- MOVIE DESCRIPTION  -->
     <div class="row justify-content-center m-0">
         <h4 class="text-center mt-3 movie-title">" GREEN BOOK "</h4>
         <p class="small text-center">Mardi 9 août - 19h30</p>
+        <div class="text-center"><button class="btn btn-primary btn-sm">Réservez <i class="fas fa-ticket-alt"></i></button></div>
         <div class="col-10 mt-4"><img src="./images/affiche-3.jpg" alt="Une affiche de film" class="affiche img-thumbnail float-start"></div>
     </div>
     <!-- MOVIE SYNOPSIS  -->
@@ -172,7 +196,7 @@
     </div>
     <!-- MOVIE CASTING  -->
     <div class="row justify-content-center m-0 mt-4">
-        <div class="col-10">
+        <div class="col-7">
             <h5 class="my-title">Casting</h5>
             <ul class="list-unstyled">
                 <li><strong>Acteurs</strong>:<br> José MARTIN, René LATAUPE</li>
@@ -180,12 +204,23 @@
                 <li><strong>Réalisateur</strong>:<br> Fred ZIPO</li>
             </ul>
         </div>
+        <div class="col-3 d-flex align-items-end justify-content-center mb-4 mr-2">
+            <div class=""><button class="btn btn-primary btn-sm">En savoir plus...</button></div>
+        </div>
+    </div>
+
+    <!-- SEPARATOR -->
+    <div class="row justify-content-center m-0 mt-4">
+        <div class="col-8">
+            <hr>
+        </div>
     </div>
 
     <!-- MOVIE DESCRIPTION  -->
     <div class="row justify-content-center m-0">
         <h4 class="text-center mt-3 movie-title">" EDMOND "</h4>
         <p class="small text-center">Mardi 9 août - 19h30</p>
+        <div class="text-center"><button class="btn btn-primary btn-sm">Réservez <i class="fas fa-ticket-alt"></i></button></div>
         <div class="col-10 mt-4"><img src="./images/affiche-4.jpg" alt="Une affiche de film" class="affiche img-thumbnail float-start"></div>
     </div>
     <!-- MOVIE SYNOPSIS  -->
@@ -199,7 +234,7 @@
     </div>
     <!-- MOVIE CASTING  -->
     <div class="row justify-content-center m-0 mt-4">
-        <div class="col-10">
+        <div class="col-7">
             <h5 class="my-title">Casting</h5>
             <ul class="list-unstyled">
                 <li><strong>Acteurs</strong>:<br> José MARTIN, René LATAUPE</li>
@@ -207,10 +242,13 @@
                 <li><strong>Réalisateur</strong>:<br> Fred ZIPO</li>
             </ul>
         </div>
+        <div class="col-3 d-flex align-items-end justify-content-center mb-4 mr-2">
+            <div class=""><button class="btn btn-primary btn-sm">En savoir plus...</button></div>
+        </div>
     </div>
 
     <!-- SEPARATOR -->
-    <div class="row justify-content-center mt-4">
+    <div class="row justify-content-center m-0 mt-4">
         <div class="col-8">
             <hr>
         </div>
@@ -231,6 +269,13 @@
         </div>
     </div>
 
+    <!-- SEPARATOR -->
+    <div class="row justify-content-center m-0 mt-4">
+        <div class="col-8">
+            <hr>
+        </div>
+    </div>
+
     <!-- FESTIVAL NEWS  -->
     <div class="row justify-content-center m-0 mt-4">
         <div class="col-10">
@@ -245,6 +290,13 @@
         </div>
     </div>
 
+    <!-- SEPARATOR -->
+    <div class="row justify-content-center m-0 mt-4">
+        <div class="col-8">
+            <hr>
+        </div>
+    </div>
+
     <!-- FESTIVAL NEWS  -->
     <div class="row justify-content-center m-0 mt-4">
         <div class="col-10">
@@ -256,6 +308,13 @@
             Donec egestas augue ut diam <strong>malesuada</strong> tempor. 
             Sed posuere vestibulum varius.</p>
             <button class="btn btn-small btn-primary mt-1">Lire plus...</button>
+        </div>
+    </div>
+
+    <!-- SEPARATOR -->
+    <div class="row justify-content-center m-0 mt-4">
+        <div class="col-8">
+            <hr>
         </div>
     </div>
 
@@ -274,7 +333,7 @@
     </div>
 
     <!-- SEPARATOR -->
-    <div class="row justify-content-center mt-4">
+    <div class="row justify-content-center m-0 mt-4">
         <div class="col-8">
             <hr>
         </div>
@@ -296,7 +355,7 @@
     </div>
 
     <!-- SEPARATOR -->
-    <div class="row justify-content-center mt-4">
+    <div class="row justify-content-center m-0 mt-4">
         <div class="col-8">
             <hr>
         </div>
@@ -305,6 +364,25 @@
     <div class="row justify-content-center m-0 mt-4">
         <div class="col-10">
             <h3 class="my-title">Contact</h3>
+            <form>
+            <div class="form-group">
+                <label for="lastname">Nom</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Nom">
+            </div>
+            <div class="form-group mt-1">
+                <label for="firstname">Prénom</label>
+                <input type="text" class="form-control" id="firstname" placeholder="Prénom">
+            </div>
+            <div class="form-group mt-1">
+                <label for="mail">Email</label>
+                <input type="text" class="form-control" id="mail" placeholder="Email">
+            </div>
+            <div class="form-group mt-1">
+                <label for="message">Message</label>
+                <textarea type="textarea" class="form-control" id="message" placeholder="Entrez votre message..."></textarea>
+            </div>
+            <button class="btn btn-primary btn-sm mt-3">Envoyez</button>
+            </form>
         </div>
     </div>
 
