@@ -84,7 +84,13 @@
             Cras rhoncus ligula vitae libero finibus mattis. 
             Integer ut ligula sed purus <strong>rhoncus</strong> tincidunt vulputate eu lectus. 
             Donec egestas augue ut diam <strong>malesuada</strong> tempor. 
-            Sed posuere vestibulum varius.</p> 
+            Sed posuere vestibulum varius.Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Curabitur interdum sit amet eros <strong>dictum</strong> commodo. Donec faucibus non nisl sed faucibus. 
+            <strong>Vestibulum</strong> ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+            Proin eu augue velit. Etiam sagittis faucibus est. Donec <strong>vitae</strong> efficitur tortor. 
+            Curabitur <strong>consequat</strong> bibendum elit.
+
+</p> 
         </div>
     </div>
 
@@ -102,14 +108,14 @@
         </div>
     </div>
     <!-- MOVIE DESCRIPTION  -->
-    <div class="row justify-content-center m-0">
+    <div class="row justify-content-center justify-content-lg-start m-0">
         <h4 class="text-center mt-3 movie-title">" BORDER "</h4>
         <p class="small text-center">Mardi 9 août - 19h30</p>
         <div class="text-center"><button class="btn btn-primary btn-lg">Réservez <i class="fas fa-ticket-alt"></i></button></div>
-        <div class="col-10 mt-4"><img src="./images/affiche-1.jpg" alt="Une affiche de film" class="affiche img-thumbnail float-start"></div>
+        <div class="col-10 mt-4 col-lg-3 offset-lg-1"><img src="./images/affiche-1.jpg" alt="Une affiche de film" class="affiche img-thumbnail float-start float-lg-none"></div>
     </div>
     <!-- MOVIE SYNOPSIS  -->
-    <div class="row justify-content-center m-0 mt-3">
+    <div class="row justify-content-center m-0 mt-3 d-lg-none">
         <div class="col-10 mt-1">
             <h5 class="my-title">Synopsis</h5>
             <p class="text-justify">
@@ -118,7 +124,7 @@
         </div>
     </div>
     <!-- MOVIE CASTING  -->
-    <div class="row justify-content-center m-0 mt-4">
+    <div class="row justify-content-center m-0 mt-4 d-lg-none">
         <div class="col-7">
             <h5 class="my-title">Casting</h5>
             <ul class="list-unstyled">
@@ -339,11 +345,14 @@
     </div>
 
     <!-- INFOS -->
-    <div class="row justify-content-sm-center m-0 mt-4">
-        <div class="col-10">
+    <div class="row justify-content-center m-0 mt-4">
+        <div class="col-10 col-lg-6">
             <h3 class="my-title">Infos pratiques</h3>
+            <div class="map-responsive mt-3">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8735531366547!2d2.3067663159005427!3d48.87968700716072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1631539680260!5m2!1sfr!2sfr" width="288" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <ul class="list-unstyled">
+            </div>
+            
+            <ul class="list-unstyled mt-3">
                 <li><strong>Métro</strong> : MONCEAU <img src="./images/metro.png" alt="" width="15" height="15"><img src="./images/2.png" alt="" width="15" height="15" class="ml-3"><img src="./images/3.png" width="15" height="15" alt="logo ligne metro" class="ml-2"></li>
                 <li><strong>Bus</strong> : Arrêt Monceau : Bus <img src="./images/30.svg" alt="logo numero ligne bus" width="15" height="15"> - Arrêt Murillo : Bus <img src="./images/84.svg" alt="logo numero ligne bus" width="15" height="15"></li>
                 <li><strong>Adresse</strong> : Boulevard de Courcelles, 75000 Paris</li>
@@ -361,7 +370,7 @@
     </div>
 
     <div class="row justify-content-center m-0 mt-4">
-        <div class="col-10">
+        <div class="col-10 col-lg-4">
             <h3 class="my-title">Contact</h3>
             <form>
             <div class="form-group">
@@ -380,7 +389,7 @@
                 <label for="message">Message</label>
                 <textarea type="textarea" class="form-control" id="message" placeholder="Entrez votre message..."></textarea>
             </div>
-            <button class="btn btn-primary btn-sm mt-3">Envoyez</button>
+            <button class="btn btn-primary btn-lg mt-3">Envoyez</button>
             </form>
         </div>
     </div>
