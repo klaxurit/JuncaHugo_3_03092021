@@ -1,0 +1,140 @@
+/* 
+
+    nav-bg: #F1ECC3;
+    body-bg: #C9D8B6;
+    title-color: #57837B;
+    text-color: #515E63; 
+
+*/
+
+/* CSS du site */
+body, html {
+    height: 100%;
+    background-color: #C9D8B6;
+    padding-top: 57px; /*50px for the height of the navbar + 37px for the offset*/
+    padding-bottom: 50px; /*50px for the height of the bottom navbar*/
+}
+
+.navbar {
+    background-color: #F1ECC3;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #515E63;
+    font-weight: 700;
+}
+
+.logo-festi {
+    height: 100px;
+    width: auto;
+}
+
+h1, h2, h3, h4, p, li{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.info-festival {
+    margin-top: 11px;
+    margin-bottom: -17px;
+    background-color: #57837B;
+}
+
+.info-date {
+    margin-top: -5px;
+    height: 21px;
+    background-color: #57837B;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.hero {
+    background-image: url(./images/hero-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh; 
+    object-fit: cover;
+}
+
+.text-overlay-left {
+    font-size: 64px;
+    margin-left: 5px;
+    object-fit: cover;
+}
+
+.my-title {
+    color: #57837B;
+    font-weight: 700;
+}
+
+.movie-title {
+    color: #515E63;
+    font-weight: 500;
+}
+
+p {
+    text-align-last: auto;
+}
+
+.text-moove > :first-child {
+    animation: defilement-rtl 15s infinite linear;
+}
+
+@keyframes defilement-rtl {
+    0% {
+      transform: translate3d(0,0,0);      /* position initiale à droite */
+    }
+    100% {
+      transform: translate3d(-100%,0,0);  /* position finale à gauche */
+    }
+}
+
+
+
+/* BreackPoint pour les différents supports */
+
+@media only screen and (min-width: 768px) {
+        /* tablettes et ordinateurs */
+        .navbar-light .navbar-nav .nav-link {
+            margin-right: 50px;
+        }
+    }
+@media only screen and (max-width: 767px) {
+    /* smartphone */
+    .hero {
+        height: 50vh;
+    }
+
+    .navbar-brand {
+        margin-right: 0;
+    }
+
+    body, html {
+        padding-top: 57px; 
+        padding-bottom: 0px;
+    }
+
+    .text-overlay-left {
+        display: none;
+    }
+}
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+/* smartphone en mode portait */
+}
+
+
+/* google map responsive */
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    
+    .map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
+
