@@ -35,8 +35,10 @@ h1, h2, h3, h4, p, li{
 
 .info-festival {
     margin-top: 11px;
+    height: 38px;
     margin-bottom: -17px;
     background-color: #57837B;
+    vertical-align: middle;
 }
 
 .info-date {
@@ -64,6 +66,11 @@ h1, h2, h3, h4, p, li{
 .my-title {
     color: #57837B;
     font-weight: 700;
+}
+
+.sub-title {
+    color: #57837B;
+    font-weight: 500;
 }
 
 .movie-title {
@@ -96,6 +103,26 @@ p {
         /* tablettes et ordinateurs */
         .navbar-light .navbar-nav .nav-link {
             margin-right: 50px;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+        li {
+            font-size: 1.1rem;
+        }
+        h1, h2, h3, h4 {
+            font-size: 2rem;
+        }
+        .my-title {
+            font-size: 2rem;
+        }
+        .sub-title {
+            font-size: 1.4rem;
+        }
+        .image-actu {
+            width:  600px;
+            height: 400px;
+            object-fit: cover;
         }
     }
 @media only screen and (max-width: 767px) {
