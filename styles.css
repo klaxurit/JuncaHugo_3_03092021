@@ -101,6 +101,9 @@ p {
 
 @media only screen and (min-width: 768px) {
         /* tablettes et ordinateurs */
+        .text-overlay-left {
+            font-size: 3rem;
+        }
         .navbar-light .navbar-nav .nav-link {
             margin-right: 50px;
         }
@@ -144,8 +147,11 @@ p {
         display: none;
     }
 }
-@media only screen and (max-width: 767px) and (orientation: portrait) {
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
 /* smartphone en mode portait */
+.text-overlay-left {
+    font-size: 5rem;
+}
 }
 
 
