@@ -15,6 +15,13 @@ body, html {
     padding-bottom: 50px; /*50px for the height of the bottom navbar*/
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .navbar {
     background-color: #F1ECC3;
 }
@@ -140,8 +147,6 @@ p {
     .hero {
         height: 50vh;
     }
-
-
 
     .navbar-brand {
         margin-right: 0;

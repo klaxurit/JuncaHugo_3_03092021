@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -91,9 +91,9 @@
 
 
     <!-- FESTIVAL ABOUT  -->
-    <div class="container">
+    <section id="about" class="container">
         <div class="row mt-4 justify-content-center">
-            <article class="col-10 col-lg-12 info-presentation m-2">
+            <div class="col-10 col-lg-12 info-presentation m-2">
                 <h3 class="my-title">Présentation du festival</h3>
                 <p class="lh-lg">
                     Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit. 
@@ -106,19 +106,13 @@
                     Proin eu augue velit. Etiam sagittis faucibus est. Donec <strong>vitae</strong> efficitur tortor. 
                     Curabitur <strong>consequat</strong> bibendum elit.
                 </p> 
-            </article>
+            </div>
         </div>
-    </div>
+    </section>
 
 
     <!-- SEPARATOR -->
-    <div class="container">
-        <div class="row justify-content-center mt-4">
-            <div class="col-8">
-                <hr>
-            </div>
-        </div>
-    </div>
+                <hr class="col-8 mt-4 mx-auto">
 
     <!-- FESTIVAL PROGRAM -->
     <section id="programme" class="container">
@@ -133,7 +127,7 @@
             
             <!-- FESTIVAL MOVIES -->
             <article class="col-10 col-md-5 col-lg-3 text-center">
-                <div class="col movie-title"><h4>" BORDER "</h4></div>
+                <div ><h4 class="col movie-title">" BORDER "</h4></div>
                 <div class="col"><time>Mardi 9 août - 19h30</time></div>
                 <div class="col"><button class="btn btn-small btn-primary my-3">
                     Réservez
@@ -165,11 +159,7 @@
             </article>
 
             <!-- SEPARATOR -->
-            <div class="row justify-content-center mt-4 d-lg-none">
-                <div class="col-8">
-                    <hr>
-                </div>
-            </div>
+            <hr class="col-8 mt-4 mx-auto d-lg-none">
 
             <!-- FESTIVAL MOVIES -->
             <article class="col-10 col-md-5 col-lg-3 text-center">
@@ -205,11 +195,7 @@
             </article>
 
             <!-- SEPARATOR -->
-            <div class="row justify-content-center mt-4 my-lg-5">
-                <div class="col-8">
-                    <hr>
-                </div>
-            </div>
+            <hr class="col-8 mt-4 mx-auto my-lg-5">
 
             <!-- FESTIVAL MOVIES -->
             <article class="col-10 col-md-5 col-lg-3 text-center">
@@ -245,11 +231,7 @@
             </article>
 
             <!-- SEPARATOR -->
-            <div class="row justify-content-center mt-4 d-lg-none">
-                <div class="col-8">
-                    <hr>
-                </div>
-            </div>
+            <hr class="col-8 mt-4 mx-auto d-lg-none">
 
             <!-- FESTIVAL MOVIES -->
             <article class="col-10 col-md-5 col-lg-3 text-center">
@@ -288,13 +270,7 @@
     </section>
 
     <!-- SEPARATOR -->
-    <div class="container">
-        <div class="row justify-content-center mt-4">
-            <div class="col-8">
-                <hr>
-            </div>
-        </div>
-    </div>
+    <hr class="col-8 mt-4 mx-auto">
 
 
     <!-- FESTIVAL NEWS  -->
@@ -318,11 +294,7 @@
         </article>
 
         <!-- SEPARATOR -->
-        <div class="row justify-content-center mt-4">
-            <div class="col-8">
-                <hr>
-            </div>
-        </div>
+        <hr class="col-8 mt-4 mx-auto">
 
         <!-- FESTIVAL NEWS  -->
         <article class="row justify-content-center mt-4">
@@ -343,11 +315,7 @@
         </article>
 
         <!-- SEPARATOR -->
-        <div class="row justify-content-center mt-4">
-            <div class="col-8">
-                <hr>
-            </div>
-        </div>
+        <hr class="col-8 mt-4 mx-auto">
 
         <!-- FESTIVAL NEWS  -->
         <article class="row justify-content-center mt-4">
@@ -368,11 +336,7 @@
         </article>
 
         <!-- SEPARATOR -->
-        <div class="row justify-content-center mt-4">
-            <div class="col-8">
-                <hr>
-            </div>
-        </div>
+        <hr class="col-8 mt-4 mx-auto">
 
         <!-- FESTIVAL NEWS  -->
         <article class="row justify-content-center mt-4">
@@ -393,11 +357,8 @@
         </article>
 
         <!-- SEPARATOR -->
-        <div class="row justify-content-center mt-4">
-            <div class="col-8">
-                <hr>
-            </div>
-        </div>
+        <hr class="col-8 mt-4 mx-auto">
+
     </section>
     
 
@@ -419,44 +380,37 @@
                 </ul>
             </div>
         
-
             <!-- SEPARATOR -->
-            <div class="row justify-content-center mt-4 d-lg-none">
-                <div class="col-8">
-                    <hr>
-                </div>
-            </div>
+            <hr class="col-8 mt-4 mx-auto d-lg-none">
 
-        
+            <!-- CONTACT FORM -->
             <div class="col-10 col-lg-5">
                 <h3 class="my-title">Contact</h3>
-                <form>
+                <form action="" method="get">
                 <div class="form-group">
                     <label for="lastname">Nom</label>
-                    <input type="text" class="form-control" id="lastname" placeholder="Nom">
+                    <input type="text" class="form-control" id="Lastname" placeholder="Nom" name="lastname">
                 </div>
                 <div class="form-group mt-1">
                     <label for="firstname">Prénom</label>
-                    <input type="text" class="form-control" id="firstname" placeholder="Prénom">
+                    <input type="text" class="form-control" id="Firstname" placeholder="Prénom" name="firstname">
                 </div>
                 <div class="form-group mt-1">
                     <label for="mail">Email</label>
-                    <input type="text" class="form-control" id="mail" placeholder="Email">
+                    <input type="email" class="form-control" id="Mail" placeholder="Email" name="email">
                 </div>
                 <div class="form-group mt-1">
                     <label for="message">Message</label>
-                    <textarea class="form-control" id="message" placeholder="Entrez votre message..."></textarea>
+                    <textarea class="form-control" id="Message" placeholder="Entrez votre message..." name="message"></textarea>
                 </div>
-                <button class="btn btn-primary mt-3">Envoyez</button>
+                <button type="submit" class="btn btn-primary mt-3">Envoyez</button>
                 </form>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <section id="my-footer">
-                <footer class="text-center mb-4"><p>&copy; Association "Film plein air" 2021 - Designed by Hugo</p></footer>
-    </section>
+    <footer id="my-footer" class="text-center mt-4"><p>&copy; Association "Film plein air" 2021 - Designed by Hugo</p></footer>
 
 
 
