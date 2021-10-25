@@ -53,40 +53,71 @@ li {
   font-weight: 5400;
 }
 
-.info-date {
+.hero {
+  background-image: url(./images/hero-img.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__top-infos {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 13px;
+  height: 21px;
+  background-color: #57837b;
+  align-items: center;
+  vertical-align: middle;
+  overflow: hidden;
+  width: 100%;
+}
+
+.hero__bottom-infos {
+  text-align: center;
   font-weight: 500;
   margin-top: -5px;
   height: 21px;
   background-color: #57837b;
   align-items: center;
   vertical-align: middle;
+  width: 100%;
+  overflow: hidden;
 }
 
-.hero {
-  background-image: url(./images/hero-img.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 80vh;
-  object-fit: cover;
+article {
+
 }
 
-.text-overlay-left {
-  font-size: 64px;
-  margin-left: 5px;
-  object-fit: cover;
-}
-
-.my-title {
+.presentation__section-title {
   color: #57837b;
   font-weight: 700;
 }
 
-.sub-title {
+.programme__section-title {
+  color: #57837b;
+  font-weight: 700;
+}
+
+.programme__movie-subtitle {
   color: #57837b;
   font-weight: 500;
 }
 
-.movie-title {
+.programme__movie-title {
+  color: #515e63;
+  font-weight: 500;
+}
+
+.news__section-title {
+  color: #57837b;
+  font-weight: 700;
+}
+
+.news__title {
   color: #515e63;
   font-weight: 500;
 }
@@ -114,10 +145,11 @@ p {
   margin-top: 15px;
   width: 100%;
   height: 20px;
+  animation: defilement-rtl 15s infinite linear;
 }
-/* Fin CSS Pour le texte défilant au dessus du HERO */
 
-#my-footer {
+/* Fin CSS Pour le texte défilant au dessus du HERO */
+footer {
   clear: both;
   position: relative;
   height: 30px;
