@@ -1,10 +1,3 @@
-/* 
-    nav-bg: #F1ECC3;
-    body-bg: #C9D8B6;
-    title-color: #57837B;
-    text-color: #515E63; 
-*/
-
 /* CSS du site */
 body,
 html {
@@ -21,7 +14,7 @@ html {
   width: 50%;
 }
 
-.navbar {
+header {
   background-color: #f1ecc3;
 }
 
@@ -33,6 +26,11 @@ html {
 .logo-festi {
   height: 100px;
   width: auto;
+}
+
+section {
+  margin-top: -100px;
+  padding-top: 100px;
 }
 
 h1,
@@ -88,10 +86,6 @@ li {
   overflow: hidden;
 }
 
-article {
-
-}
-
 .presentation__section-title {
   color: #57837b;
   font-weight: 700;
@@ -110,6 +104,7 @@ article {
 .programme__movie-title {
   color: #515e63;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .news__section-title {
@@ -122,36 +117,24 @@ article {
   font-weight: 500;
 }
 
+.news__author {
+  color: #57837b;
+}
+
+.about__section-title {
+  color: #57837b;
+  font-weight: 700;
+}
+
 p {
   text-align-last: auto;
 }
 
-/* Début CSS Pour le texte défilant au dessus du HERO */
-.marquee-rtl {
-  width: 100%;
-  max-width: 120em; /* A ADAPTER */
-  background-color: #57837b;
-  overflow: hidden; /* on affiche pas tout ce qui dépasse */
-}
-
-.marquee-rtl:hover > div {
-  animation-play-state: paused; /* met en pause le défilement */
-}
-
-.marquee-rtl > :first-child {
-  font-weight: 500;
-  white-space: nowrap;
-  display: inline-block;
-  margin-top: 15px;
-  width: 100%;
-  height: 20px;
-  animation: defilement-rtl 15s infinite linear;
-}
-
 /* Fin CSS Pour le texte défilant au dessus du HERO */
 footer {
-  clear: both;
-  position: relative;
+  position:relative;
+  bottom:0;
+  width:100%;
   height: 30px;
   background: #f1ecc3;
 }
@@ -181,9 +164,11 @@ footer {
   }
   .my-title {
     font-size: 2rem;
+    color: #57837b;
   }
   .sub-title {
     font-size: 1.4rem;
+    color: #57837b;
   }
   .image-actu {
     width: 600px;

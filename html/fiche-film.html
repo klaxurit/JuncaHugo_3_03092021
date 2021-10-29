@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -32,8 +32,8 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <header class="container-fluid">
-      <nav class="navbar navbar-expand-lg fixed-top navbar-light p-2">
+    <header class="container-fluid fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light p-2 container">
         <a class="navbar-brand"
           ><img
             src="../assets/images/logo-festi.png"
@@ -80,9 +80,9 @@
       </nav>
     </header>
 
-    <section id="fiche-film" class="container my-3">
+    <section id="fiche-film" class="container my-lg-3">
       <div class="row justify-content-center">
-        <h3 class="programme__movie-title text-center mt-5">" BORDER "</h3>
+        <h3 class="programme__movie-title text-center mt-5 mt-md-5">" BORDER "</h3>
         <time class="text-center mb-5">Mardi 9 août - 19h30</time>
         <div class="col-12 col-md-5 d-flex flex-column">
           <!-- BANDE ANNONCE  -->
@@ -115,6 +115,8 @@
               <strong>malesuada</strong> tempor.
             </p>
           </div>
+          
+          
         </div>
 
         <div class="col-12 col-md-5 ml-md-4 ms-md-5 d-flex flex-lg-column-reverse ">
@@ -142,20 +144,17 @@
               class="affiche img-thumbnail float-start float-lg-none"
             />
           </div>
-        </div>
           
-        
-        <div
-          class="col-12 col-md-10 col-lg-8 d-flex justify-content-around mt-4"
-        >
-          <button class="btn btn-primary col-md-2">Retour</button>
-          <button class="btn btn-primary col-md-2">Réservez</button>
         </div>
+      </div>
+      <div class="text-end ms-lg-5 ms-md-4 col-12 col-md-3 col-lg-2 mt-4">
+          <button class="btn btn-primary">Réservez</button>
+          <button class="btn btn-primary" onclick="history.back()">Retour</button>
       </div>
     </section>
 
     <!-- FOOTER -->
-    <footer id="my-footer" class="text-center mt-4">
+    <footer class="text-center mt-4">
       <p>&copy; Association "Film plein air" 2021 - Designed by Hugo</p>
     </footer>
 
