@@ -87,7 +87,7 @@
         <h3 class="programme__movie-title text-center mt-5 mt-md-5">
           " BORDER "
         </h3>
-        <time class="text-center mb-5">Mardi 9 août - 19h30</time>
+        <p class="text-center mb-5">Mardi 9 août - 19h30</p>
         <div class="col-12 col-md-5 d-flex flex-column">
           <!-- BANDE ANNONCE  -->
           <div class="col-12 text-center">
@@ -96,7 +96,6 @@
                 <iframe
                   src="https://player.allocine.fr/19581696.html"
                   allowfullscreen
-                  frameborder="0"
                   height="315"
                   width="560"
                 >
@@ -192,20 +191,20 @@
                 <div class="mb-3">
                   <label class="form-label">Adresse email</label>
                   <input
-                    type="mail"
+                    type="email"
                     class="form-control"
-                    id="mail"
-                    name="mail"
+                    id="email"
+                    name="email"
                     placeholder="exemple@exemple.com"
                   />
                 </div>
                 <div class="mb-3">
                   <label class="form-label">Combien serez-vous ?</label>
                   <input
-                    type="select"
+                    type="number"
                     class="form-control"
-                    id="password"
-                    name="password"
+                    id="number"
+                    name="number"
                     placeholder="Entrez un nombre..."
                   />
                 </div>
@@ -214,7 +213,6 @@
                     >Message à l'organisation du festival</label
                   >
                   <textarea
-                    type="textarea"
                     class="form-control"
                     placeholder="Laisser votre message ici..."
                     id="message"
@@ -258,7 +256,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script type="text/javascript">
+    <script>
       const myReservationForm = document.getElementById("myReservationForm");
       const myContactForm = document.getElementById("myContactForm");
 

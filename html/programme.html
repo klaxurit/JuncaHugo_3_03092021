@@ -546,20 +546,20 @@
                 <div class="mb-3">
                   <label class="form-label">Adresse email</label>
                   <input
-                    type="mail"
+                    type="email"
                     class="form-control"
-                    id="mail"
-                    name="mail"
+                    id="email"
+                    name="email"
                     placeholder="exemple@exemple.com"
                   />
                 </div>
                 <div class="mb-3">
                   <label class="form-label">Combien serez-vous ?</label>
                   <input
-                    type="select"
+                    type="number"
                     class="form-control"
-                    id="password"
-                    name="password"
+                    id="number"
+                    name="number"
                     placeholder="Entrez un nombre..."
                   />
                 </div>
@@ -568,7 +568,6 @@
                     >Message à l'organisation du festival</label
                   >
                   <textarea
-                    type="textarea"
                     class="form-control"
                     placeholder="Laisser votre message ici..."
                     id="message"
@@ -612,7 +611,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script type="text/javascript">
+    <script>
       const myReservationForm = document.getElementById("myReservationForm");
       const myContactForm = document.getElementById("myContactForm");
 
