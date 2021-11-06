@@ -87,7 +87,8 @@
     <div class="container-fluid">
       <div class="row">
         <span class="hero__top-infos"
-          ><i class="fas fa-film fa-rotate-90 "></i></i>Date du festival : du lundi 8 au lundi 15 août<i class="fas fa-film fa-rotate-90"></i>
+          ><i class="fas fa-film fa-rotate-90"></i>Date du festival : du lundi 8
+          au lundi 15 août<i class="fas fa-film fa-rotate-90"></i>
         </span>
       </div>
     </div>
@@ -99,7 +100,8 @@
     <div class="container-fluid">
       <div class="row">
         <span class="col-12 hero__bottom-infos">
-          <i class="fas fa-film fa-rotate-90 "></i>Lundi 8 août à 18h : fast and furius 18<i class="fas fa-film fa-rotate-90 "></i>
+          <i class="fas fa-film fa-rotate-90"></i>Lundi 8 août à 18h : fast and
+          furius 18<i class="fas fa-film fa-rotate-90"></i>
         </span>
       </div>
     </div>
@@ -108,7 +110,9 @@
     <section id="presentation" class="container">
       <div class="row mt-4 justify-content-center">
         <div class="col-10 col-lg-12 m-2">
-          <h3 class="presentation__section-title mt-4">Présentation du festival</h3>
+          <h3 class="presentation__section-title mt-4">
+            Présentation du festival
+          </h3>
           <img
             src="./assets/images/presentation.png"
             alt=""
@@ -157,34 +161,83 @@
           <div class="col-6 text-center">
             <h4 class="programme__movie-title">" BORDER "</h4>
             <p>Mardi 9 août - 19h30</p>
-            <button class="btn btn-small btn-festi my-3" type="button" data-bs-toggle="modal" data-bs-target="#reservationModal">
+            <button
+              class="btn btn-small btn-festi my-3"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#reservationModal"
+            >
               Réservez
               <i class="fas fa-ticket-alt"></i>
             </button>
             <!-- RESERVATION MODAL -->
-            <div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div
+              class="modal fade"
+              id="reservationModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Formulaire de reservation</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Formulaire de reservation
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
                   </div>
                   <div class="modal-body">
-                    <form action="" class="text-start" id="myReservationForm" method="post">
+                    <form
+                      action=""
+                      class="text-start"
+                      id="myReservationForm"
+                      method="post"
+                    >
                       <div class="mb-3">
-                          <label class="form-label">Adresse email</label>
-                          <input type="mail" class="form-control" id="mail" name="mail" placeholder="exemple@exemple.com"/>
+                        <label class="form-label">Adresse email</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="specEmail"
+                          name="email"
+                          placeholder="exemple@exemple.com"
+                        />
                       </div>
                       <div class="mb-3">
-                          <label class="form-label">Combien serez-vous ?</label>
-                          <input type="select" class="form-control" id="password" name="password" placeholder="Entrez un nombre..."/>
+                        <label class="form-label">Combien serez-vous ?</label>
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="number"
+                          name="number"
+                          placeholder="Entrez un nombre..."
+                        />
                       </div>
                       <div class="mb-3">
-                          <label class="form-label">Message à l'organisation du festival</label>
-                          <textarea type="textarea" class="form-control" placeholder="Laisser votre message ici..." id="message" name="message"></textarea>
+                        <label class="form-label"
+                          >Message à l'organisation du festival</label
+                        >
+                        <textarea
+                          class="form-control"
+                          placeholder="Laisser votre message ici..."
+                          id="specMessage"
+                          name="message"
+                        ></textarea>
                       </div>
                       <div class="modal-footer d-block">
-                          <button type="submit" class="btn btn-festi float-end" data-bs-dismiss="modal" aria-label="Close">Envoyer</button>
+                        <button
+                          type="submit"
+                          class="btn btn-festi float-end"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          Envoyer
+                        </button>
                       </div>
                     </form>
                   </div>
@@ -223,7 +276,9 @@
                 </li>
               </ul>
             </div>
-            <a href="html/fiche-film.html" class="btn btn-festi col-5">En savoir plus...</a>
+            <a href="html/fiche-film.html" class="btn btn-festi col-5"
+              >En savoir plus...</a
+            >
           </div>
         </article>
 
@@ -234,7 +289,11 @@
           <div class="col-6 text-center">
             <h4 class="programme__movie-title">" 90's "</h4>
             <p>Mardi 9 août - 19h30</p>
-            <button class="btn btn-small btn-festi my-3" data-bs-toggle="modal" data-bs-target="#reservationModal">
+            <button
+              class="btn btn-small btn-festi my-3"
+              data-bs-toggle="modal"
+              data-bs-target="#reservationModal"
+            >
               Réservez
               <i class="fas fa-ticket-alt"></i>
             </button>
@@ -270,7 +329,9 @@
                 </li>
               </ul>
             </div>
-            <a href="html/fiche-film.html" class="col-5 btn btn-festi">En savoir plus...</a>
+            <a href="html/fiche-film.html" class="col-5 btn btn-festi"
+              >En savoir plus...</a
+            >
           </div>
         </article>
       </div>
@@ -283,7 +344,11 @@
           <div class="col-6 text-center">
             <h4 class="programme__movie-title">" green book "</h4>
             <p>Mardi 9 août - 19h30</p>
-            <button class="btn btn-small btn-festi my-3" data-bs-toggle="modal" data-bs-target="#reservationModal">
+            <button
+              class="btn btn-small btn-festi my-3"
+              data-bs-toggle="modal"
+              data-bs-target="#reservationModal"
+            >
               Réservez
               <i class="fas fa-ticket-alt"></i>
             </button>
@@ -319,7 +384,9 @@
                 </li>
               </ul>
             </div>
-            <a href="html/fiche-film.html" class="btn btn-festi col-5">En savoir plus...</a>
+            <a href="html/fiche-film.html" class="btn btn-festi col-5"
+              >En savoir plus...</a
+            >
           </div>
         </article>
 
@@ -330,7 +397,11 @@
           <div class="col-6 text-center">
             <h4 class="programme__movie-title">" EDMOND "</h4>
             <p>Mardi 9 août - 19h30</p>
-            <button class="btn btn-small btn-festi my-3" data-bs-toggle="modal" data-bs-target="#reservationModal">
+            <button
+              class="btn btn-small btn-festi my-3"
+              data-bs-toggle="modal"
+              data-bs-target="#reservationModal"
+            >
               Réservez
               <i class="fas fa-ticket-alt"></i>
             </button>
@@ -366,7 +437,9 @@
                 </li>
               </ul>
             </div>
-            <a href="html/fiche-film.html" class="col-5 btn btn-festi">En savoir plus...</a>
+            <a href="html/fiche-film.html" class="col-5 btn btn-festi"
+              >En savoir plus...</a
+            >
           </div>
         </article>
       </div>
@@ -385,7 +458,13 @@
       <article class="row justify-content-center mt-4 mb-4">
         <div class="col-10 col-lg-6">
           <h4 class="mt-4 news__title">Donec egestas augue.</h4>
-          <p class="news__author"><span class="fw-bold small">Christine JOYAUX</span><span class="text-muted small"> le 10/07/2021 - <i class="far fa-clock"></i> 3 min de lecture</span></p>
+          <p class="news__author">
+            <span class="fw-bold small">Christine JOYAUX</span
+            ><span class="text-muted small">
+              le 10/07/2021 - <i class="far fa-clock"></i> 3 min de
+              lecture</span
+            >
+          </p>
           <img
             src="./assets/images/actu-1.jpg"
             class="image-actu img-thumbnail"
@@ -411,7 +490,9 @@
             vitae libero finibus mattis. Integer ut ligula sed purus
             <strong>rhoncus</strong> tincidunt vulputate eu lectus.
           </p>
-          <a href="html/fiche-actu.html" class="btn btn-small btn-festi mt-1">Lire plus...</a>
+          <a href="html/fiche-actu.html" class="btn btn-small btn-festi mt-1"
+            >Lire plus...</a
+          >
         </div>
       </article>
 
@@ -422,7 +503,13 @@
       <article class="row justify-content-center mt-4 mb-4">
         <div class="col-10 col-lg-6">
           <h4 class="mt-4 news__title">Donec egestas augue.</h4>
-          <p class="news__author"><span class="fw-bold small">David CONSTANTIN</span><span class="text-muted small"> le 10/07/2021 - <i class="far fa-clock"></i> 3 min de lecture</span></p>
+          <p class="news__author">
+            <span class="fw-bold small">David CONSTANTIN</span
+            ><span class="text-muted small">
+              le 10/07/2021 - <i class="far fa-clock"></i> 3 min de
+              lecture</span
+            >
+          </p>
           <img
             src="./assets/images/actu-2.jpg"
             class="image-actu img-thumbnail"
@@ -448,7 +535,9 @@
             vitae libero finibus mattis. Integer ut ligula sed purus
             <strong>rhoncus</strong> tincidunt vulputate eu lectus.
           </p>
-          <a href="html/fiche-actu.html" class="btn btn-small btn-festi mt-1">Lire plus...</a>
+          <a href="html/fiche-actu.html" class="btn btn-small btn-festi mt-1"
+            >Lire plus...</a
+          >
         </div>
       </article>
 
@@ -459,7 +548,13 @@
       <article class="row justify-content-center mt-4 mb-4">
         <div class="col-10 col-lg-6">
           <h4 class="mt-4 news__title">Donec egestas augue.</h4>
-          <p class="news__author"><span class="fw-bold small">Ahmed LAIDI</span><span class="text-muted small"> le 10/07/2021 - <i class="far fa-clock"></i> 3 min de lecture</span></p>
+          <p class="news__author">
+            <span class="fw-bold small">Ahmed LAIDI</span
+            ><span class="text-muted small">
+              le 10/07/2021 - <i class="far fa-clock"></i> 3 min de
+              lecture</span
+            >
+          </p>
           <img
             src="./assets/images/actu-3.jpg"
             class="image-actu img-thumbnail"
@@ -485,7 +580,9 @@
             vitae libero finibus mattis. Integer ut ligula sed purus
             <strong>rhoncus</strong> tincidunt vulputate eu lectus.
           </p>
-          <a href="html/fiche-actu.html" class="btn btn-small btn-festi mt-1">Lire plus...</a>
+          <a href="html/fiche-actu.html" class="btn btn-small btn-festi mt-1"
+            >Lire plus...</a
+          >
         </div>
       </article>
 
@@ -496,7 +593,13 @@
       <article class="row justify-content-center mt-4 mb-4">
         <div class="col-10 col-lg-6">
           <h4 class="mt-4 news__title">Donec egestas augue.</h4>
-          <p class="news__author"><span class="fw-bold small">Xin XINPING</span><span class="text-muted small"> le 10/07/2021 - <i class="far fa-clock"></i> 3 min de lecture</span></p>
+          <p class="news__author">
+            <span class="fw-bold small">Xin XINPING</span
+            ><span class="text-muted small">
+              le 10/07/2021 - <i class="far fa-clock"></i> 3 min de
+              lecture</span
+            >
+          </p>
           <img
             src="./assets/images/actu-4.jpg"
             class="image-actu img-thumbnail"
@@ -522,7 +625,9 @@
             vitae libero finibus mattis. Integer ut ligula sed purus
             <strong>rhoncus</strong> tincidunt vulputate eu lectus.
           </p>
-          <a href="html/fiche-actu.html" class="btn btn-small btn-festi mt-1">Lire plus...</a>
+          <a href="html/fiche-actu.html" class="btn btn-small btn-festi mt-1"
+            >Lire plus...</a
+          >
         </div>
       </article>
 
@@ -603,7 +708,7 @@
         <!-- CONTACT FORM -->
         <div id="contact" class="col-10 col-lg-5">
           <h3 class="about__section-title">Contact</h3>
-          <form action="" method="get" id="myContactForm">
+          <form action="" method="get" id="myContactForm" method="post">
             <div class="form-group">
               <label for="lastname">Nom</label>
               <input
@@ -625,7 +730,7 @@
               />
             </div>
             <div class="form-group mt-1">
-              <label for="mail">Email</label>
+              <label for="email">Email</label>
               <input
                 type="email"
                 class="form-control"
@@ -663,9 +768,13 @@
       integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script type="text/javascript">
+    <script>
       const myReservationForm = document.getElementById("myReservationForm");
       const myContactForm = document.getElementById("myContactForm");
 
@@ -678,7 +787,10 @@
       myContactForm.addEventListener("submit", (e) => {
         e.preventDefault();
 
-        swal("Message envoyé !", "L'organisation du festival traitera votre message dans les plus bref délais. À bientôt !");
+        swal(
+          "Message envoyé !",
+          "L'organisation du festival traitera votre message dans les plus bref délais. À bientôt !"
+        );
       });
     </script>
   </body>
