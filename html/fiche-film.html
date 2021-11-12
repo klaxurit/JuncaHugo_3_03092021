@@ -43,8 +43,8 @@
         <button
           class="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -87,43 +87,42 @@
         <h3 class="programme__movie-title text-center mt-5 mt-md-5">
           " BORDER "
         </h3>
-        <p class="text-center mb-5">Mardi 9 août - 19h30</p>
+        <time class="text-center mb-5">Mardi 9 août - 19h30</time>
         <div class="col-12 col-md-5 d-flex flex-column">
-          <!-- BANDE ANNONCE  -->
-          <div class="col-12 text-center">
-            <div class="text-center embedresize">
-              <div id="blogvision">
-                <iframe
-                  src="https://player.allocine.fr/19581696.html"
-                  allowfullscreen
-                  height="315"
-                  width="560"
-                >
-                </iframe>
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <div class="text-center embedresize">
+                <div id="blogvision">
+                  <iframe
+                    src="https://player.allocine.fr/19581696.html"
+                    allowfullscreen
+                    scrolling="no"
+                  >
+                  </iframe>
+                </div>
               </div>
             </div>
+            <!-- MOVIE SYNOPSIS  -->
+            <div class="col-12 mt-3">
+              <h5 class="programme__movie-subtitle text-start">Synopsis</h5>
+              <p class="text-start">
+                Integer ut ligula sed purus <strong>rhoncus</strong> tincidunt
+                vulputate eu lectus. Donec egestas augue ut diam
+                <strong>malesuada</strong> tempor. Integer ut ligula sed purus
+                <strong>rhoncus</strong> tincidunt vulputate eu lectus. Donec
+                egestas augue ut diam <strong>malesuada</strong> tempor. Integer
+                ut ligula sed purus <strong>rhoncus</strong> tincidunt vulputate
+                eu lectus. Donec egestas augue ut diam
+                <strong>malesuada</strong> tempor.
+              </p>
+            </div>
           </div>
-
-          <!-- MOVIE SYNOPSIS  -->
-          <div class="col-12 mt-3">
-            <h5 class="programme__movie-subtitle text-start">Synopsis</h5>
-            <p class="text-start">
-              Integer ut ligula sed purus <strong>rhoncus</strong> tincidunt
-              vulputate eu lectus. Donec egestas augue ut diam
-              <strong>malesuada</strong> tempor. Integer ut ligula sed purus
-              <strong>rhoncus</strong> tincidunt vulputate eu lectus. Donec
-              egestas augue ut diam <strong>malesuada</strong> tempor. Integer
-              ut ligula sed purus <strong>rhoncus</strong> tincidunt vulputate
-              eu lectus. Donec egestas augue ut diam
-              <strong>malesuada</strong> tempor.
-            </p>
-          </div>
+          <!-- BANDE ANNONCE  -->
         </div>
 
-        <div
-          class="col-12 col-md-5 ml-md-4 ms-md-5 d-flex flex-lg-column-reverse"
-        >
-          <div class="col-6 col-md-5 ms-md-5">
+        <div class="col-12 col-md-5 ml-md-4 ms-md-5 d-flex flex-md-column-reverse">
+        
+                    <div class="col-6 col-md-5 ms-md-5">
             <h5 class="programme__movie-subtitle text-start mt-3">Casting</h5>
             <ul class="list-unstyled text-start">
               <li>
@@ -140,25 +139,28 @@
               </li>
             </ul>
           </div>
-          <div class="col-6 col-md-5 ms-md-5 mt-3 mt-md-0">
+          <div class="col-6 ms-md-5 mt-3 mt-md-0">
             <img
               src="../assets/images/affiche-4.jpg"
               alt="Une affiche de film"
-              class="affiche img-thumbnail float-start float-lg-none"
+              class="img-thumbnail float-start float-lg-none"
             />
           </div>
         </div>
-      </div>
-      <div class="text-end ms-lg-5 ms-md-4 col-12 col-md-3 col-lg-2 mt-4">
-        <button
-          class="btn btn-small btn-festi my-3"
-          type="button"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
-          Réservez
-        </button>
-        <button class="btn btn-festi" onclick="history.back()">Retour</button>
+
+        </div>
+      
+        <div class="col-10 text-center">
+          <button
+            class="btn btn-small btn-festi my-3"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Réservez
+          </button>
+          <button class="btn btn-festi" onclick="history.back()">Retour</button>
+        </div>
       </div>
       <!-- RESERVATION MODAL -->
       <div

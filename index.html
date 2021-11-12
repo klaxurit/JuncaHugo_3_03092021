@@ -43,15 +43,7 @@
             alt="Logo du festival"
             class="logo-festi"
         /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- MENU -->
@@ -59,7 +51,7 @@
           class="collapse navbar-collapse justify-content-center"
           id="navbarSupportedContent"
         >
-          <ul class="navbar-nav mr-auto text-uppercase">
+          <ul class="navbar-nav mr-auto text-center text-uppercase">
             <li class="nav-item active">
               <a class="nav-link" href="">Accueil</a>
             </li>
@@ -156,292 +148,261 @@
       </div>
 
       <!-- FESTIVAL MOVIES -->
-      <div class="row">
-        <article class="col-12 col-md-10 col-lg-6 row mt-3">
-          <div class="col-6 text-center">
-            <h4 class="programme__movie-title">" BORDER "</h4>
-            <p>Mardi 9 août - 19h30</p>
-            <button
-              class="btn btn-small btn-festi my-3"
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#reservationModal"
-            >
-              Réservez
-              <i class="fas fa-ticket-alt"></i>
-            </button>
-            <!-- RESERVATION MODAL -->
-            <div
-              class="modal fade"
-              id="reservationModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">
-                      Formulaire de reservation
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <form
-                      action=""
-                      class="text-start"
-                      id="myReservationForm"
-                      method="post"
-                    >
-                      <div class="mb-3">
-                        <label class="form-label">Adresse email</label>
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="specEmail"
-                          name="email"
-                          placeholder="exemple@exemple.com"
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <label class="form-label">Combien serez-vous ?</label>
-                        <input
-                          type="number"
-                          class="form-control"
-                          id="number"
-                          name="number"
-                          placeholder="Entrez un nombre..."
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <label class="form-label"
-                          >Message à l'organisation du festival</label
-                        >
-                        <textarea
-                          class="form-control"
-                          placeholder="Laisser votre message ici..."
-                          id="specMessage"
-                          name="message"
-                        ></textarea>
-                      </div>
-                      <div class="modal-footer d-block">
-                        <button
-                          type="submit"
-                          class="btn btn-festi float-end"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        >
-                          Envoyer
-                        </button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
+      <div class="row justify-content-center">
+        <article class="col-12 col-md-10 col-lg-6 mt-3 mb-3">
+          <div class="row">
+            <div class="col-12 col-lg-6 text-center">
+              <h4 class="programme__movie-title">" BORDER "</h4>
+              <p>Mardi 9 août - 19h30</p>
+              <button
+                class="btn btn-small btn-festi my-3"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Réservez
+                <i class="fas fa-ticket-alt"></i>
+              </button>
+              <img
+                src="./assets/images/affiche-1.jpg"
+                alt="Une affiche de film"
+                class="affiche img-thumbnail float-start float-lg-none"
+              />
+            </div>
+            <div class="col-12 col-lg-6 d-flex flex-column align-self-end">
+              <div>
+                <h5 class="programme__movie-subtitle text-start mt-4">
+                  Synopsis
+                </h5>
+                <p class="text-start">
+                  Integer ut ligula sed purus <strong>rhoncus</strong> tincidunt
+                  vulputate eu lectus. Donec egestas augue ut diam
+                  <strong>malesuada</strong> tempor...
+                </p>
               </div>
+              <div>
+                <h5 class="programme__movie-subtitle text-start">Casting</h5>
+                <ul class="list-unstyled text-start">
+                  <li>
+                    <strong>Acteurs</strong>:<br />
+                    José MARTIN, René LATAUPE
+                  </li>
+                  <li>
+                    <strong>Producteur</strong>:<br />
+                    Marion BLANCHARD
+                  </li>
+                  <li>
+                    <strong>Réalisateur</strong>:<br />
+                    Fred ZIPO
+                  </li>
+                </ul>
+              </div>
+              <a href="html/fiche-film.html" class="btn btn-festi col-6"
+                >En savoir plus...</a
+              >
             </div>
-            <img
-              src="./assets/images/affiche-1.jpg"
-              alt="Une affiche de film"
-              class="affiche img-thumbnail float-start float-lg-none"
-            />
-          </div>
-          <div class="col-6 d-flex flex-column align-self-end">
-            <div>
-              <h5 class="programme__movie-subtitle text-start">Synopsis</h5>
-              <p class="text-start">
-                Integer ut ligula sed purus <strong>rhoncus</strong> tincidunt
-                vulputate eu lectus. Donec egestas augue ut diam
-                <strong>malesuada</strong> tempor...
-              </p>
-            </div>
-            <div>
-              <h5 class="programme__movie-subtitle text-start">Casting</h5>
-              <ul class="list-unstyled text-start">
-                <li>
-                  <strong>Acteurs</strong>:<br />
-                  José MARTIN, René LATAUPE
-                </li>
-                <li>
-                  <strong>Producteur</strong>:<br />
-                  Marion BLANCHARD
-                </li>
-                <li>
-                  <strong>Réalisateur</strong>:<br />
-                  Fred ZIPO
-                </li>
-              </ul>
-            </div>
-            <a href="html/fiche-film.html" class="btn btn-festi col-5"
-              >En savoir plus...</a
-            >
           </div>
         </article>
 
         <!-- SEPARATOR -->
         <hr class="col-8 mt-4 mx-auto mt-5 d-lg-none" />
 
-        <article class="col-12 col-md-10 col-lg-6 row mt-3">
-          <div class="col-6 text-center">
-            <h4 class="programme__movie-title">" 90's "</h4>
-            <p>Mardi 9 août - 19h30</p>
-            <button
-              class="btn btn-small btn-festi my-3"
-              data-bs-toggle="modal"
-              data-bs-target="#reservationModal"
-            >
-              Réservez
-              <i class="fas fa-ticket-alt"></i>
-            </button>
-            <img
-              src="./assets/images/affiche-2.jpg"
-              alt="Une affiche de film"
-              class="affiche img-thumbnail float-start float-lg-none"
-            />
-          </div>
-          <div class="col-6 d-flex flex-column align-self-end">
-            <div>
-              <h5 class="programme__movie-subtitle text-start">Synopsis</h5>
-              <p class="text-start">
-                Integer ut ligula sed purus <strong>rhoncus</strong> tincidunt
-                vulputate eu lectus. Donec egestas augue ut diam
-                <strong>malesuada</strong> tempor...
-              </p>
+        <article class="col-12 col-md-10 col-lg-6 mt-3 mb-3">
+          <div class="row">
+            <div class="col-12 col-lg-6 text-center">
+              <h4 class="programme__movie-title">" 90's "</h4>
+              <p>Mardi 9 août - 19h30</p>
+              <button
+                class="btn btn-small btn-festi my-3"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Réservez
+                <i class="fas fa-ticket-alt"></i>
+              </button>
+              <img
+                src="./assets/images/affiche-2.jpg"
+                alt="Une affiche de film"
+                class="affiche img-thumbnail float-start float-lg-none"
+              />
             </div>
-            <div>
-              <h5 class="programme__movie-subtitle text-start">Casting</h5>
-              <ul class="list-unstyled text-start">
-                <li>
-                  <strong>Acteurs</strong>:<br />
-                  José MARTIN, René LATAUPE
-                </li>
-                <li>
-                  <strong>Producteur</strong>:<br />
-                  Marion BLANCHARD
-                </li>
-                <li>
-                  <strong>Réalisateur</strong>:<br />
-                  Fred ZIPO
-                </li>
-              </ul>
+            <div class="col-12 col-md-6 d-flex flex-column align-self-end">
+              <div>
+                <h5 class="programme__movie-subtitle text-start mt-4">
+                  Synopsis
+                </h5>
+                <p class="text-start">
+                  Integer ut ligula sed purus <strong>rhoncus</strong> tincidunt
+                  vulputate eu lectus. Donec egestas augue ut diam
+                  <strong>malesuada</strong> tempor...
+                </p>
+              </div>
+              <div>
+                <h5 class="programme__movie-subtitle text-start">Casting</h5>
+                <ul class="list-unstyled text-start">
+                  <li>
+                    <strong>Acteurs</strong>:<br />
+                    José MARTIN, René LATAUPE
+                  </li>
+                  <li>
+                    <strong>Producteur</strong>:<br />
+                    Marion BLANCHARD
+                  </li>
+                  <li>
+                    <strong>Réalisateur</strong>:<br />
+                    Fred ZIPO
+                  </li>
+                </ul>
+              </div>
+              <a href="html/fiche-film.html" class="col-6 btn btn-festi"
+                >En savoir plus...</a
+              >
             </div>
-            <a href="html/fiche-film.html" class="col-5 btn btn-festi"
-              >En savoir plus...</a
-            >
           </div>
         </article>
-      </div>
 
-      <!-- SEPARATOR -->
-      <hr class="col-10 in mt-4 mx-auto my-lg-5" />
+        <!-- SEPARATOR -->
+        <hr class="col-10 in mt-4 mx-auto my-lg-5" />
 
-      <div class="row">
-        <article class="col-12 col-md-10 col-lg-6 row mt-3">
-          <div class="col-6 text-center">
-            <h4 class="programme__movie-title">" green book "</h4>
-            <p>Mardi 9 août - 19h30</p>
-            <button
-              class="btn btn-small btn-festi my-3"
-              data-bs-toggle="modal"
-              data-bs-target="#reservationModal"
-            >
-              Réservez
-              <i class="fas fa-ticket-alt"></i>
-            </button>
-            <img
-              src="./assets/images/affiche-3.jpg"
-              alt="Une affiche de film"
-              class="affiche img-thumbnail float-start float-lg-none"
-            />
-          </div>
-          <div class="col-6 d-flex flex-column align-self-end">
-            <div>
-              <h5 class="programme__movie-subtitle text-start">Synopsis</h5>
-              <p class="text-start">
-                Integer ut ligula sed purus <strong>rhoncus</strong> tincidunt
-                vulputate eu lectus. Donec egestas augue ut diam
-                <strong>malesuada</strong> tempor...
-              </p>
+        <article class="col-12 col-md-10 col-lg-6 mt-3 mb-3">
+          <div class="row">
+            <div class="col-12 col-lg-6 text-center">
+              <h4 class="programme__movie-title">" Green book "</h4>
+              <p>Mardi 9 août - 19h30</p>
+              <button
+                class="btn btn-small btn-festi my-3"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Réservez
+                <i class="fas fa-ticket-alt"></i>
+              </button>
+              <img
+                src="./assets/images/affiche-3.jpg"
+                alt="Une affiche de film"
+                class="affiche img-thumbnail float-start float-lg-none"
+              />
             </div>
-            <div>
-              <h5 class="programme__movie-subtitle text-start">Casting</h5>
-              <ul class="list-unstyled text-start">
-                <li>
-                  <strong>Acteurs</strong>:<br />
-                  José MARTIN, René LATAUPE
-                </li>
-                <li>
-                  <strong>Producteur</strong>:<br />
-                  Marion BLANCHARD
-                </li>
-                <li>
-                  <strong>Réalisateur</strong>:<br />
-                  Fred ZIPO
-                </li>
-              </ul>
+            <div class="col-12 col-md-6 d-flex flex-column align-self-end">
+              <div>
+                <h5 class="programme__movie-subtitle text-start mt-4">
+                  Synopsis
+                </h5>
+                <p class="text-start">
+                  Integer ut ligula sed purus <strong>rhoncus</strong> tincidunt
+                  vulputate eu lectus. Donec egestas augue ut diam
+                  <strong>malesuada</strong> tempor...
+                </p>
+              </div>
+              <div>
+                <h5 class="programme__movie-subtitle text-start">Casting</h5>
+                <ul class="list-unstyled text-start">
+                  <li>
+                    <strong>Acteurs</strong>:<br />
+                    José MARTIN, René LATAUPE
+                  </li>
+                  <li>
+                    <strong>Producteur</strong>:<br />
+                    Marion BLANCHARD
+                  </li>
+                  <li>
+                    <strong>Réalisateur</strong>:<br />
+                    Fred ZIPO
+                  </li>
+                </ul>
+              </div>
+              <a href="html/fiche-film.html" class="btn btn-festi col-6"
+                >En savoir plus...</a
+              >
             </div>
-            <a href="html/fiche-film.html" class="btn btn-festi col-5"
-              >En savoir plus...</a
-            >
           </div>
         </article>
 
         <!-- SEPARATOR -->
         <hr class="col-8 mt-4 mx-auto my-5 d-lg-none" />
 
-        <article class="col-12 col-md-10 col-lg-6 row mt-3">
-          <div class="col-6 text-center">
-            <h4 class="programme__movie-title">" EDMOND "</h4>
-            <p>Mardi 9 août - 19h30</p>
-            <button
-              class="btn btn-small btn-festi my-3"
-              data-bs-toggle="modal"
-              data-bs-target="#reservationModal"
-            >
-              Réservez
-              <i class="fas fa-ticket-alt"></i>
-            </button>
-            <img
-              src="./assets/images/affiche-4.jpg"
-              alt="Une affiche de film"
-              class="affiche img-thumbnail float-start float-lg-none"
-            />
-          </div>
-          <div class="col-6 d-flex flex-column align-self-end">
-            <div>
-              <h5 class="programme__movie-subtitle text-start">Synopsis</h5>
-              <p class="text-start">
-                Integer ut ligula sed purus <strong>rhoncus</strong> tincidunt
-                vulputate eu lectus. Donec egestas augue ut diam
-                <strong>malesuada</strong> tempor...
-              </p>
+        <article class="col-12 col-md-10 col-lg-6 mt-3 mb-3">
+          <div class="row">
+            <div class="col-12 col-lg-6 text-center">
+              <h4 class="programme__movie-title">" EDMOND "</h4>
+              <p>Mardi 9 août - 19h30</p>
+              <button
+                class="btn btn-small btn-festi my-3"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Réservez
+                <i class="fas fa-ticket-alt"></i>
+              </button>
+              <img
+                src="./assets/images/affiche-4.jpg"
+                alt="Une affiche de film"
+                class="affiche img-thumbnail float-start float-lg-none"
+              />
             </div>
-            <div>
-              <h5 class="programme__movie-subtitle text-start">Casting</h5>
-              <ul class="list-unstyled text-start">
-                <li>
-                  <strong>Acteurs</strong>:<br />
-                  José MARTIN, René LATAUPE
-                </li>
-                <li>
-                  <strong>Producteur</strong>:<br />
-                  Marion BLANCHARD
-                </li>
-                <li>
-                  <strong>Réalisateur</strong>:<br />
-                  Fred ZIPO
-                </li>
-              </ul>
+            <div class="col-12 col-md-6 d-flex flex-column align-self-end">
+              <div>
+                <h5 class="programme__movie-subtitle text-start mt-4">
+                  Synopsis
+                </h5>
+                <p class="text-start">
+                  Integer ut ligula sed purus <strong>rhoncus</strong> tincidunt
+                  vulputate eu lectus. Donec egestas augue ut diam
+                  <strong>malesuada</strong> tempor...
+                </p>
+              </div>
+              <div>
+                <h5 class="programme__movie-subtitle text-start">Casting</h5>
+                <ul class="list-unstyled text-start">
+                  <li>
+                    <strong>Acteurs</strong>:<br />
+                    José MARTIN, René LATAUPE
+                  </li>
+                  <li>
+                    <strong>Producteur</strong>:<br />
+                    Marion BLANCHARD
+                  </li>
+                  <li>
+                    <strong>Réalisateur</strong>:<br />
+                    Fred ZIPO
+                  </li>
+                </ul>
+              </div>
+              <a href="html/fiche-film.html" class="col-6 btn btn-festi"
+                >En savoir plus...</a
+              >
             </div>
-            <a href="html/fiche-film.html" class="col-5 btn btn-festi"
-              >En savoir plus...</a
-            >
           </div>
         </article>
+      </div>
+      <!-- RESERVATION MODAL -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Formulaire de reservation</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="" class="text-start" id="myReservationForm" method="post">
+                <div class="mb-3">
+                    <label class="form-label">Adresse email</label>
+                    <input type="mail" class="form-control" id="mail" name="mail" placeholder="exemple@exemple.com"/>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Combien serez-vous ?</label>
+                    <input type="select" class="form-control" id="password" name="password" placeholder="Entrez un nombre..."/>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Message à l'organisation du festival</label>
+                    <textarea type="textarea" class="form-control" placeholder="Laisser votre message ici..." id="message" name="message"></textarea>
+                </div>
+                <div class="modal-footer d-block">
+                    <button type="submit" class="btn btn-festi float-end" data-bs-dismiss="modal" aria-label="Close">Envoyer</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -455,7 +416,7 @@
           <h3 class="news__section-title">Actualités</h3>
         </div>
       </div>
-      <article class="row justify-content-center mt-4 mb-4">
+      <article class="row justify-content-center my-5">
         <div class="col-10 col-lg-6">
           <h4 class="mt-4 news__title">Donec egestas augue.</h4>
           <p class="news__author">
@@ -496,11 +457,11 @@
         </div>
       </article>
 
-      <!-- SEPARATOR -->
-      <hr class="col-8 mt-4 mx-auto" />
+        <!-- SEPARATOR -->
+        <hr class="col-10 in mt-4 mx-auto my-lg-5" />
 
       <!-- FESTIVAL NEWS  -->
-      <article class="row justify-content-center mt-4 mb-4">
+      <article class="row justify-content-center my-5">
         <div class="col-10 col-lg-6">
           <h4 class="mt-4 news__title">Donec egestas augue.</h4>
           <p class="news__author">
@@ -540,12 +501,11 @@
           >
         </div>
       </article>
-
-      <!-- SEPARATOR -->
-      <hr class="col-8 mt-4 mx-auto" />
+        <!-- SEPARATOR -->
+        <hr class="col-10 in mt-4 mx-auto my-lg-5" />
 
       <!-- FESTIVAL NEWS  -->
-      <article class="row justify-content-center mt-4 mb-4">
+      <article class="row justify-content-center my-5">
         <div class="col-10 col-lg-6">
           <h4 class="mt-4 news__title">Donec egestas augue.</h4>
           <p class="news__author">
@@ -586,11 +546,11 @@
         </div>
       </article>
 
-      <!-- SEPARATOR -->
-      <hr class="col-8 mt-4 mx-auto" />
+        <!-- SEPARATOR -->
+        <hr class="col-10 in mt-4 mx-auto my-lg-5" />
 
       <!-- FESTIVAL NEWS  -->
-      <article class="row justify-content-center mt-4 mb-4">
+      <article class="row justify-content-center my-5">
         <div class="col-10 col-lg-6">
           <h4 class="mt-4 news__title">Donec egestas augue.</h4>
           <p class="news__author">
@@ -631,8 +591,8 @@
         </div>
       </article>
 
-      <!-- SEPARATOR -->
-      <hr class="col-8 mt-4 mx-auto" />
+              <!-- SEPARATOR -->
+        <hr class="col-10 in mt-4 mx-auto my-lg-5" />
     </section>
 
     <!-- FESTIVAL INFOS -->
