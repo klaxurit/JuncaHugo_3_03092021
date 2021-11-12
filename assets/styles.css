@@ -65,7 +65,7 @@ li {
   margin-bottom: -17px;
   background-color: #57837b;
   vertical-align: middle;
-  font-weight: 5400;
+  font-weight: 400;
 }
 
 .hero {
@@ -159,7 +159,6 @@ footer {
   height: 30px;
   background: #f1ecc3;
 }
-
 
 
 /* Modal de réservation */

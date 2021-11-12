@@ -383,18 +383,18 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form action="" class="text-start" id="myReservationForm" method="post">
+              <form action="#" class="text-start" id="myReservationForm" method="post">
                 <div class="mb-3">
                     <label class="form-label">Adresse email</label>
-                    <input type="mail" class="form-control" id="mail" name="mail" placeholder="exemple@exemple.com"/>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="exemple@exemple.com"/>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Combien serez-vous ?</label>
-                    <input type="select" class="form-control" id="password" name="password" placeholder="Entrez un nombre..."/>
+                    <input type="number" class="form-control" id="password" name="password" placeholder="Entrez un nombre..."/>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Message à l'organisation du festival</label>
-                    <textarea type="textarea" class="form-control" placeholder="Laisser votre message ici..." id="message" name="message"></textarea>
+                    <textarea class="form-control" placeholder="Laisser votre message ici..." id="message" name="message"></textarea>
                 </div>
                 <div class="modal-footer d-block">
                     <button type="submit" class="btn btn-festi float-end" data-bs-dismiss="modal" aria-label="Close">Envoyer</button>
@@ -668,7 +668,7 @@
         <!-- CONTACT FORM -->
         <div id="contact" class="col-10 col-lg-5">
           <h3 class="about__section-title">Contact</h3>
-          <form action="" method="get" id="myContactForm" method="post">
+          <form action="#" id="myContactForm" method="post">
             <div class="form-group">
               <label for="lastname">Nom</label>
               <input
@@ -694,7 +694,7 @@
               <input
                 type="email"
                 class="form-control"
-                id="email"
+                id="email2"
                 placeholder="Email"
                 name="email"
               />
@@ -703,7 +703,7 @@
               <label for="message">Message</label>
               <textarea
                 class="form-control"
-                id="message"
+                id="message2"
                 placeholder="Entrez votre message..."
                 name="message"
               ></textarea>
