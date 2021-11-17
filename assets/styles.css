@@ -151,12 +151,11 @@ p {
 
 /* FOOTER */
 footer {
-  position: relative;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  height: 30px;
+  text-align: center;
   background: #f1ecc3;
 }
 
@@ -232,6 +231,16 @@ footer {
     height: 50vh;
   }
 
+  footer {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 30px;
+    background: #f1ecc3;
+  }
+
   .navbar-brand {
     margin-right: 0;
   }
@@ -250,6 +259,16 @@ footer {
   /* smartphone en mode portait */
   .text-overlay-left {
     font-size: 5rem;
+  }
+
+  footer {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 30px;
+    background: #f1ecc3;
   }
 }
 
